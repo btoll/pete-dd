@@ -1,0 +1,30 @@
+{
+  "name": "pete-dd",
+  "version": "0.1.0",
+  "description": "Drag and drop helper",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "(cd src && babel * -d ../build)",
+    "clean": "rm -rf build",
+    "install": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btoll/pete-dd.git"
+  },
+  "keywords": [],
+  "author": "Benjamin Toll <benjam72@yahoo.com> (http://www.benjamintoll.com)",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/btoll/pete-dd/issues"
+  },
+  "homepage": "https://github.com/btoll/pete-dd#readme",
+  "dependencies": {
+    "pete-core": "github:btoll/pete-core",
+    "pete-dom": "github:btoll/pete-dom"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1"
+  }
+}
+
