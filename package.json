@@ -1,13 +1,8 @@
 {
   "name": "pete-dd",
-  "version": "0.1.0",
-  "description": "Drag and drop helper",
+  "version": "0.2.0",
+  "description": "PeteJS drag and drop module",
   "main": "build/index.js",
-  "scripts": {
-    "build": "(cd src && babel * -d ../build)",
-    "clean": "rm -rf build",
-    "install": "npm run build"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/btoll/pete-dd.git"
@@ -19,12 +14,18 @@
     "url": "https://github.com/btoll/pete-dd/issues"
   },
   "homepage": "https://github.com/btoll/pete-dd#readme",
+  "scripts": {
+    "build": "npm run clean && babel src/ --out-dir dist/ --presets=\"@babel/env\"",
+    "clean": "rm -rf dist",
+    "install": "npm run build"
+  },
   "dependencies": {
     "pete-core": "github:btoll/pete-core",
     "pete-dom": "github:btoll/pete-dom"
   },
   "devDependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1"
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0"
   }
 }
-
