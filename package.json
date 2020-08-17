@@ -2,7 +2,7 @@
   "name": "pete-dd",
   "version": "0.2.0",
   "description": "PeteJS drag and drop module",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/btoll/pete-dd.git"
