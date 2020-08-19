@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2009 - 2018 Benjamin Toll (benjamintoll.com)
+ * Copyright (c) 2009 - 2020 Benjamin Toll (benjamintoll.com)
  *
  * This file is part of pete-dd.
  *
